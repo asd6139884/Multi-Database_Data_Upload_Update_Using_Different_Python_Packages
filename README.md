@@ -1,6 +1,6 @@
 # Multi-Database Data Upload/Update Using Different Python Packages
 本專案旨在使用不同的 Python 套件連接各種 SQL 資料庫，實現 CSV 資料的上傳或更新。
-目前已支援 MySQL，未來將擴展至其他資料庫，如 PostgreSQL、SQLite、SQL Server 等。
+目前已支援 SQLite、MySQL，未來將擴展至其他資料庫，如 PostgreSQL、SQL Server 等。
 
 - 通用
   - `SQLAlchemy`
