@@ -1,21 +1,20 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 22 09:27:58 2025
-
-@author: Chih-Yi
-"""
+import os
+import sys
 import pandas as pd
 import configparser
 import mysql.connector
 from mysql.connector import Error
 
+
 if __name__ == "__main__":
-    file = 'data1.csv'
+    os.chdir(os.path.dirname(os.path.abspath(sys.argv[0]))) #切換到目前這個 Python 檔案的目錄
+
+    file = '../input/data1.csv'
     data = pd.read_csv(open(file))
     
     ## 讀取設定檔
     config = configparser.ConfigParser()
-    config.read('./control/Setting.ini')
+    config.read('../control/Setting.ini')
     
     host = config['Set']['host']
     username = config['Set']['user']
