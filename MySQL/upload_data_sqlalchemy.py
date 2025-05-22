@@ -16,11 +16,11 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('../control/Setting.ini')
 
-    host = config['Set']['host']
-    username = config['Set']['user']
-    password = config['Set']['password']
-    database = config['Set']['database']
-    table_name = config['Set']['datatabel']
+    host = config['MySQL']['host']
+    username = config['MySQL']['user']
+    password = config['MySQL']['password']
+    database = config['MySQL']['database']
+    table_name = config['MySQL']['datatabel']
 
     # 建立引擎
     engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}/{database}?charset=utf8mb4")
