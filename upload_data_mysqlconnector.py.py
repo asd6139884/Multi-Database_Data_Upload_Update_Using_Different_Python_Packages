@@ -7,7 +7,7 @@ Created on Thu May 22 09:27:58 2025
 import pandas as pd
 import configparser
 import mysql.connector
-
+from mysql.connector import Error
 
 if __name__ == "__main__":
     file = 'data1.csv'
