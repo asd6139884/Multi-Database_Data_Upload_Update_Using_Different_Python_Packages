@@ -15,9 +15,6 @@ if __name__ == "__main__":
 
     db_path = config['SQLite']['sqlite_path'] # SQLite 資料庫路徑
     table_name = config['SQLite']['datatabel'] # 資料表名稱
-    print(f"資料庫路徑：{db_path}")
-    print(f"資料表名稱：{table_name}")
-
 
     try:
         connection = sqlite3.connect(db_path)
